@@ -1,78 +1,88 @@
-# KisanLens AI — PS-04 Agricultural Intelligence
+# KisanLens AI
 
-[![GDG Prayagraj Hackathon](https://img.shields.io/badge/Hackathon-GDG%20Prayagraj-green.svg)](https://github.com)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue.svg)](https://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.x-blue.svg)](https://kotlinlang.org)
 [![Compose](https://img.shields.io/badge/Jetpack%20Compose-M3-green.svg)](https://developer.android.com/jetpack/compose)
-[![Google AI](https://img.shields.io/badge/Google%20AI-Gemini%201.5%2F2.0-orange.svg)](https://ai.google.dev)
+[![Google AI](https://img.shields.io/badge/Google%20AI-Gemini%20Flash-orange.svg)](https://ai.google.dev)
 
-**KisanLens AI** is an AI-powered crop intelligence assistant built for small and marginal farmers across India for **Problem Statement 04 — Agricultural Intelligence** at **GDG Prayagraj Code for Community Hackathon**.
+**KisanLens AI** is an Android app that turns a phone camera into a crop doctor. A farmer photographs an affected leaf; Google Gemini's vision model identifies the crop and the likely disease, rates its severity, and returns practical remedies — spoken aloud in **Hindi** or **English**.
 
-The primary experience is:
-> **Camera → Crop Leaf Image → Gemini Vision → Disease Identification → Severity & Remedy → Localized Explanation → Voice Playback**
-
----
-
-## 🌟 Key Features
-
-1. **Camera-First Leaf Scanner**: CameraX powered real-time leaf alignment overlay with lighting tips and gallery fallback.
-2. **Google Gemini Multimodal AI**: Real-time leaf analysis returning structured JSON (Crop Name, Disease Status, Severity, Symptoms, Immediate & Preventive Actions).
-3. **Zero-Literacy Voice Advisory**: Integrated Android `TextToSpeech` engine playing localized advisories in **Hindi** (`hi`) and **English** (`en`).
-4. **Dual-Language Onboarding**: Instant Hindi/English language choice persisted across sessions via DataStore.
-5. **Farm Insights Engine**: Regional extension points combining Weather forecasting (rain probability), Soil health (moisture/pH), and Satellite Vegetation Health Indices (NDVI).
-6. **Deterministic Hackathon Demo Mode**: Fail-safe offline sample mode ensuring seamless 90-second judge presentation regardless of internet conditions.
-7. **Pan-India Digital Public Good Architecture**: State, District, and Farm level data partitioning ready for national AgriStack integration.
+> **Camera → Leaf Image → Gemini Vision → Diagnosis → Severity & Remedy → Voice Advisory**
 
 ---
 
-## 🛠 Tech Stack & Google Technologies
+## Features
 
-- **Language**: Kotlin 2.0+
-- **UI Framework**: Jetpack Compose (Material 3)
-- **Architecture**: Modern Android Development (MAD) MVVM + Coroutines + StateFlow
-- **AI Core**: Google Generative AI (Gemini 1.5/2.0 Flash Vision)
-- **Camera**: CameraX
-- **Backend Infrastructure**: Firebase AI Logic, Firestore, Storage
-- **Local Persistence**: DataStore Preferences
-- **Audio Engine**: Android TextToSpeech (`hi_IN`, `en_US`)
+1. **Camera-first leaf scanner** — CameraX preview with an alignment frame, lighting guidance, and a gallery fallback.
+2. **Gemini multimodal diagnosis** — Returns structured JSON (crop, disease status, confidence, severity, visual evidence, immediate and preventive actions, localized advisory).
+3. **Voice advisory** — Android `TextToSpeech` (`hi_IN` / `en_US`) reads the full advisory aloud, with play/stop controls.
+4. **Ask Kisan AI** — Voice or text chat for general farming questions, answered in the farmer's chosen language.
+5. **Scan history** — Every diagnosis is saved on device, reopenable, and deletable.
+6. **Farm insights** — Weather, soil health, and satellite vegetation (NDVI) panels for the detected region.
+7. **Seasonal crop guide** — Offline dataset of what to sow this season, selected by region.
+8. **Bilingual UI** — Complete English (`res/values/`) and Hindi (`res/values-hi/`) string sets; language choice persisted in DataStore.
+9. **Demo mode** — On-device sample dataset so the app is fully explorable without spending API quota.
+10. **Safety-first advisories** — Conservative wording ("likely…"), no chemical doses or brand names, and a standing prompt to consult a local Krishi Vigyan Kendra or extension officer for severe cases.
 
 ---
 
-## 🚀 Setup & Build Instructions
+## Tech Stack
 
-### Prerequisites
-- Android Studio Ladybug or newer
-- JDK 17+
-- Android SDK 35+
+| Layer | Technology |
+| --- | --- |
+| Language | Kotlin |
+| UI | Jetpack Compose, Material 3 |
+| Architecture | MVVM, Coroutines, StateFlow, Navigation Compose |
+| AI | Google Generative AI SDK — Gemini Flash for vision diagnosis and chat |
+| Camera | CameraX (core, camera2, lifecycle, view) |
+| Audio | Android `TextToSpeech` (`hi_IN` / `en_US`), `SpeechRecognizer` |
+| Local persistence | DataStore Preferences + on-device scan history |
+| Image loading | Coil |
+| JSON | Gson |
+| Location | Platform `LocationManager` (no Play Services dependency) |
 
-### Build Steps
+---
+
+## Setup & Build
+
+**Prerequisites:** Android Studio Ladybug or newer, JDK 17+, Android SDK 35+.
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/KisanLensAI.git
+   git clone <repo-url>
    cd KisanLensAI
    ```
-2. Set your Gemini API Key in `local.properties`:
+2. Add your Gemini API key to `local.properties`:
    ```properties
    GEMINI_API_KEY=your_actual_gemini_api_key_here
    ```
-3. Assemble the debug APK:
+3. Build the debug APK:
    ```bash
    ./gradlew app:assembleDebug
    ```
-4. Run Unit Tests:
+4. Run the unit tests:
    ```bash
    ./gradlew app:testDebugUnitTest
    ```
 
+The app is fully usable without a key: point it at the bundled demo dataset and every screen renders end to end.
+
 ---
 
-## 🎯 90-Second Demo Flow for Hackathon Judges
+## Project Structure
 
-1. **Launch App**: Open KisanLens. First launch displays Onboarding.
-2. **Choose Language**: Select **हिन्दी** (or English) and press **आगे बढ़ें (Continue)**.
-3. **Home Screen**: View greeting, optional crop selector (Tomato, Wheat, Rice, Potato), and quick Farm Insights.
-4. **Tap Hero Button**: Press `📷 फसल की पत्ती स्कैन करें` (Scan Crop Leaf).
-5. **Point Camera**: Align leaf inside the green target frame and tap `📷 Analyze Crop`.
-6. **AI Analysis Loading**: Watch multi-stage progress (*✓ Examining leaf → ✓ Identifying symptoms → ✓ Assessing severity → ✓ Preparing advice*).
-7. **Result Screen**: View disease status, confidence score, severity pill, visual evidence, and immediate remedies.
-8. **Press Voice Button**: Tap `[ 🔊 सुनें / Listen ]` to hear the localized voice advisory aloud!
-9. **Farm Insights & Impact**: Navigate to **खेत स्थिति (Farm Insights)** and **प्रभाव (Impact)** tabs to inspect weather/soil/satellite extension points and DPG architecture.
+```
+app/src/main/java/com/thebugslayyers/kisanlensai/
+├── core/            ai (Gemini analyzer + chat), audio (TTS, speech), location
+├── data/            local (DataStore), mock (demo + seasonal crop datasets), repository
+├── domain/          models and repository interfaces
+├── feature/         onboarding, home, camera, analysis, result, farm, scans, chat, impact
+└── ui/              theme, navigation, MainViewModel
+```
+
+---
+
+## Notes & Limitations
+
+- The **Farm Insights** weather, soil, and satellite panels are simulated extension points. They demonstrate how a live data feed would slot in; they are not connected to a live provider, and the UI labels them as demo data.
+- The crop vision and chat calls run against Google AI Studio's free tier, so throughput is bounded by that quota. **Demo mode** exists so the app stays fully demonstrable when the quota is spent.
+- Advisories are guidance, not a prescription. Chemical treatment decisions are deliberately left to local agricultural officers.
