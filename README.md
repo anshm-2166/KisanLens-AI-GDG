@@ -76,15 +76,3 @@ The primary experience is:
 7. **Result Screen**: View disease status, confidence score, severity pill, visual evidence, and immediate remedies.
 8. **Press Voice Button**: Tap `[ 🔊 सुनें / Listen ]` to hear the localized voice advisory aloud!
 9. **Farm Insights & Impact**: Navigate to **खेत स्थिति (Farm Insights)** and **प्रभाव (Impact)** tabs to inspect weather/soil/satellite extension points and DPG architecture.
-
----
-
-## 🏆 Satisfying the 5 Judging Criteria
-
-Full breakdown in [`docs/JUDGING_CRITERIA.md`](docs/JUDGING_CRITERIA.md):
-
-- **AI Execution (25%)**: Multimodal Gemini 1.5/2.0 Flash Vision with structured JSON response schema and multi-stage progress feedback.
-- **Deployability (25%)**: Production-grade MAD architecture, CameraX, DataStore, offline fail-safe Demo Mode.
-- **Inclusivity (15%)**: Zero-literacy voice playback in Hindi & English with 56dp+ touch targets and camera-first UX.
-- **Problem Fit (20%)**: Addresses PS-04 with real-time advisories, weather/soil/satellite extension points.
-- **Impact (10%)**: Early disease detection, chemical overuse prevention, and national AgriStack/KVK interoperability.
