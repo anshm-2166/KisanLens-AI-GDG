@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">KisanLens AI</string>
+    <string name="app_tagline">AI Crop Intelligence Companion</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">KisanLens AI</string>
+    <string name="onboarding_welcome_subtitle">Your AI Crop Intelligence Companion for Healthier Harvests</string>
+    <string name="choose_language">Choose your language</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_english">English</string>
+    <string name="continue_button">Continue</string>
+    <string name="camera_permission_title">Camera Access Needed</string>
+    <string name="camera_permission_desc">KisanLens needs camera access to scan crop leaves and diagnose diseases instantly.</string>
+    <string name="grant_permission">Allow Camera Access</string>
+
+    <!-- Home -->
+    <string name="home_title">KisanLens AI</string>
+    <string name="home_greeting">Namaste, Farmer Friend 🙏</string>
+    <string name="home_subtitle">Scan your crop leaf for immediate AI disease diagnosis &amp; expert advice.</string>
+    <string name="scan_crop_hero">Scan Crop Leaf</string>
+    <string name="scan_crop_hero_sub">Point camera at affected leaf for AI analysis</string>
+    <string name="select_crop_label">Select Crop (Optional)</string>
+    <string name="crop_auto">Auto Detect</string>
+    <string name="crop_tomato">Tomato</string>
+    <string name="crop_wheat">Wheat</string>
+    <string name="crop_rice">Rice</string>
+    <string name="crop_potato">Potato</string>
+    <string name="crop_cotton">Cotton</string>
+    <string name="crop_other">Other Crop</string>
+    <string name="farm_insights_card_title">Farm Insights (Prayagraj, UP)</string>
+    <string name="farm_insights_card_sub">Weather, Soil &amp; Satellite Status</string>
+    <string name="demo_mode_toggle">Demo Mode (Offline Sample)</string>
+    <string name="demo_mode_subtitle">Use test dataset to avoid exhausting limits while testing</string>
+
+    <!-- Home quick actions -->
+    <string name="home_quick_actions_title">Quick Actions</string>
+    <string name="home_card_scan_title">Scan Crop</string>
+    <string name="home_card_scan_sub">Diagnose a leaf in seconds</string>
+    <string name="home_card_chat_title">Ask AI</string>
+    <string name="home_card_chat_sub">Any farming question</string>
+    <string name="home_card_insights_title">Insights</string>
+    <string name="home_card_insights_sub">Weather, soil &amp; satellite</string>
+    <string name="home_card_history_title">Scan History</string>
+    <string name="home_card_history_sub">Your past diagnoses</string>
+
+    <!-- Home seasonal crops -->
+    <string name="home_season_title">Crops for This Season</string>
+    <string name="home_season_now_badge">NOW</string>
+    <string name="home_discuss_with_ai">Discuss with AI</string>
+    <string name="home_region_change">Change</string>
+    <string name="home_region_from_device">from your location</string>
+
+    <!-- Camera -->
+    <string name="camera_title">KisanLens Scanner</string>
+    <string name="camera_instruction">Point your camera at an affected leaf</string>
+    <string name="place_leaf_here">Place leaf inside frame</string>
+    <string name="tip_daylight">💡 Use natural daylight</string>
+    <string name="tip_focus">💡 Keep one affected leaf clear &amp; in focus</string>
+    <string name="analyze_crop_button">Analyze Crop</string>
+    <string name="retake_button">Retake Photo</string>
+    <string name="gallery_fallback">Choose from Gallery</string>
+
+    <!-- Analysis Loading -->
+    <string name="analyzing_title">Analyzing your crop…</string>
+    <string name="stage_examining">✓ Examining leaf details</string>
+    <string name="stage_identifying">✓ Identifying visible symptoms</string>
+    <string name="stage_assessing">✓ Assessing severity level</string>
+    <string name="stage_preparing">✓ Preparing practical advice</string>
+
+    <!-- Result -->
+    <string name="result_title">Crop Analysis Result</string>
+    <string name="status_disease_detected">LIKELY DISEASE DETECTED</string>
+    <string name="status_healthy">CROP APPEARS HEALTHY</string>
+    <string name="status_uncertain">UNCERTAIN DIAGNOSIS</string>
+    <string name="confidence_label">Confidence</string>
+    <string name="severity_label">Severity Level</string>
+    <string name="severity_low">Low</string>
+    <string name="severity_moderate">Moderate</string>
+    <string name="severity_high">High</string>
+    <string name="severity_unknown">Unknown</string>
+    <string name="visual_evidence_header">WHAT WE SEE</string>
+    <string name="immediate_actions_header">WHAT TO DO NOW</string>
+    <string name="corrective_measures_header">STEP-BY-STEP CORRECTIVE MEASURES</string>
+    <string name="chemical_guidance_header">CHEMICAL &amp; FUNGICIDE SAFETY</string>
+    <string name="prevention_header">PREVENTIVE CARE</string>
+    <string name="expert_help_header">WHEN TO CONSULT AN EXPERT</string>
+    <string name="advisory_disclaimer">Disclaimer: Based on visible symptoms. For severe cases or chemical treatment, consult local agricultural officers.</string>
+    <string name="listen_button">Listen</string>
+    <string name="stop_audio_button">⏹ Stop Audio</string>
+    <string name="replay_audio_button">🔄 Replay Audio</string>
+    <string name="scan_another_button">Scan Another Leaf</string>
+
+    <!-- Farm Insights -->
+    <string name="farm_insights_title">Farm Insights</string>
+    <string name="farm_location">Location: Prayagraj, Uttar Pradesh</string>
+    <string name="weather_title">Weather Forecast</string>
+    <string name="weather_detail">Rain probability: 72% | Temp: 28°C | Humidity: 78%</string>
+    <string name="soil_title">Soil Health</string>
+    <string name="soil_detail">Moisture: Moderate (42%) | pH: 6.8 | NPK: Optimal</string>
+    <string name="satellite_title">Satellite Health Index</string>
+    <string name="satellite_detail">Vegetation Health Index (NDVI): 0.76 (Good)</string>
+    <string name="integrated_advisory_title">Integrated Farm Advisory</string>
+    <string name="integrated_advisory_body">Based on high rain probability (72%) and moderate soil moisture, delay heavy irrigation for 2 days. Monitor humid foliage for early blight or fungal spots.</string>
+    <string name="demo_data_badge">Demo Data</string>
+    <string name="live_ai_badge">Live Gemini AI</string>
+
+    <!-- Scans & History -->
+    <string name="scans_title">Scan History</string>
+    <string name="scans_subtitle">Past crop disease diagnoses saved on device</string>
+    <string name="no_scans_title">No Past Scans Yet</string>
+    <string name="no_scans_subtitle">Point your camera at a crop leaf to perform an instant AI diagnosis.</string>
+
+    <!-- Impact & Vision -->
+    <string name="impact_title">Impact &amp; Scalability</string>
+    <string name="impact_subtitle">Digital Public Good Architecture for Indian Agriculture</string>
+    <string name="impact_point1_title">🌾 Early Problem Detection</string>
+    <string name="impact_point1_desc">Detect disease before widespread yield loss occurs.</string>
+    <string name="impact_point2_title">💧 Optimized Resource Use</string>
+    <string name="impact_point2_desc">Prevent unnecessary chemical overuse and water wastage.</string>
+    <string name="impact_point3_title">🗣 Zero-Literacy Inclusion</string>
+    <string name="impact_point3_desc">Voice-first advisories in Hindi and English with simple camera workflow.</string>
+    <string name="impact_point4_title">📱 Pan-India DPG Architecture</string>
+    <string name="impact_point4_desc">Data-partitionable design across State, District, and Farm levels.</string>
+    <string name="impact_simulation_note">* Digital Public Good Architecture for KisanLens AI.</string>
+
+    <!-- Bottom Nav / Titles -->
+    <string name="nav_home">Home</string>
+    <string name="nav_camera">Camera</string>
+    <string name="nav_scans">Scans</string>
+    <string name="nav_insights">Insights</string>
+    <string name="nav_chat">Ask AI</string>
+    <string name="nav_impact">Impact</string>
+
+    <!-- Errors -->
+    <string name="error_camera">Camera access is required to scan crop leaves.</string>
+    <string name="error_network">Internet connection required for live AI analysis. Try Demo Mode if offline.</string>
+    <string name="error_bad_image">We couldn\'t clearly see the crop leaf. Try taking the photo in daylight and keep one leaf inside the frame.</string>
+    <string name="error_general">Analysis failed. Please try again or switch to Demo Mode.</string>
+
+    <!-- Chat / Ask Kisan AI -->
+    <string name="chat_title">Ask Kisan AI</string>
+    <string name="chat_subtitle">Ask any farming question</string>
+    <string name="chat_input_hint">Type your question…</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_mic">Speak your question</string>
+    <string name="chat_listening">Listening… speak now</string>
+    <string name="chat_thinking">Kisan AI is thinking…</string>
+    <string name="chat_new_chat">New chat</string>
+    <string name="chat_dismiss">Dismiss</string>
+    <string name="chat_empty_title">How can I help your farm today?</string>
+    <string name="chat_empty_subtitle">Ask about crops, pests, soil, weather or anything else about farming.</string>
+    <string name="chat_seeded_banner">This chat is about your recent scan</string>
+    <string name="chat_seeded_season_banner">This chat is about %1$s season crops</string>
+    <string name="chat_read_aloud">Read aloud</string>
+    <string name="chat_stop_audio">Stop</string>
+    <string name="chat_about_scan_short">Ask AI about this scan</string>
+    <string name="chat_suggestion_1">Which crop should I sow this season?</string>
+    <string name="chat_suggestion_2">How do I control pests without chemicals?</string>
+    <string name="chat_suggestion_3">Why are my leaves turning yellow?</string>
+    <string name="chat_suggestion_4">When should I irrigate my field?</string>
+</resources>

@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">किसानलेंस AI</string>
+    <string name="app_tagline">एआई फसल सुरक्षा साथी</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">किसानलेंस AI</string>
+    <string name="onboarding_welcome_subtitle">बेहतर और स्वस्थ पैदावार के लिए आपका अपना एआई फसल साथी</string>
+    <string name="choose_language">अपनी भाषा चुनें</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_english">English</string>
+    <string name="continue_button">आगे बढ़ें</string>
+    <string name="camera_permission_title">कैमरा अनुमति आवश्यक</string>
+    <string name="camera_permission_desc">किसानलेंस को फसल की पत्ती स्कैन करके बीमारी पहचानने के लिए कैमरा अनुमति की आवश्यकता है।</string>
+    <string name="grant_permission">कैमरा अनुमति दें</string>
+
+    <!-- Home -->
+    <string name="home_title">किसानलेंस AI</string>
+    <string name="home_greeting">नमस्ते, किसान भाई 🙏</string>
+    <string name="home_subtitle">तुरंत एआई बीमारी जांच और सलाह के लिए फसल की पत्ती स्कैन करें।</string>
+    <string name="scan_crop_hero">📷 फसल की पत्ती स्कैन करें</string>
+    <string name="scan_crop_hero_sub">प्रभावित पत्ती पर कैमरा रखें</string>
+    <string name="select_crop_label">फसल चुनें (वैकल्पिक)</string>
+    <string name="crop_auto">स्वचालित पहचान</string>
+    <string name="crop_tomato">टमाटर</string>
+    <string name="crop_wheat">गेहूं</string>
+    <string name="crop_rice">धान / चावल</string>
+    <string name="crop_potato">आलू</string>
+    <string name="crop_cotton">कपास</string>
+    <string name="crop_other">अन्य फसल</string>
+    <string name="farm_insights_card_title">खेत जानकारी (प्रयागराज, उत्तर प्रदेश)</string>
+    <string name="farm_insights_card_sub">मौसम, मिट्टी और सैटेलाइट स्थिति</string>
+    <string name="demo_mode_toggle">डेमो मोड (ऑफलाइन नमूना)</string>
+    <string name="demo_mode_subtitle">टेस्टिंग के दौरान लिमिट खत्म होने से बचने के लिए टेस्ट डेटासेट इस्तेमाल करें</string>
+
+    <!-- Home quick actions -->
+    <string name="home_quick_actions_title">तुरंत काम</string>
+    <string name="home_card_scan_title">फसल स्कैन</string>
+    <string name="home_card_scan_sub">सेकंडों में पत्ती की जांच</string>
+    <string name="home_card_chat_title">AI से पूछें</string>
+    <string name="home_card_chat_sub">खेती से जुड़ा कोई भी सवाल</string>
+    <string name="home_card_insights_title">खेत की स्थिति</string>
+    <string name="home_card_insights_sub">मौसम, मिट्टी और सैटेलाइट</string>
+    <string name="home_card_history_title">स्कैन इतिहास</string>
+    <string name="home_card_history_sub">आपकी पिछली जांच</string>
+
+    <!-- Home seasonal crops -->
+    <string name="home_season_title">इस मौसम की फसलें</string>
+    <string name="home_season_now_badge">अभी</string>
+    <string name="home_discuss_with_ai">AI से चर्चा करें</string>
+    <string name="home_region_change">बदलें</string>
+    <string name="home_region_from_device">आपकी लोकेशन से</string>
+
+    <!-- Camera -->
+    <string name="camera_title">किसानलेंस स्कैनर</string>
+    <string name="camera_instruction">प्रभावित पत्ती पर कैमरा रखें</string>
+    <string name="place_leaf_here">पत्ती को फ्रेम के अंदर रखें</string>
+    <string name="tip_daylight">💡 दिन के प्राकृतिक प्रकाश का उपयोग करें</string>
+    <string name="tip_focus">💡 एक प्रभावित पत्ती को साफ और फोकस में रखें</string>
+    <string name="analyze_crop_button">📷 फसल की जांच करें</string>
+    <string name="retake_button">दोबारा फोटो लें</string>
+    <string name="gallery_fallback">गैलरी से चुनें</string>
+
+    <!-- Analysis Loading -->
+    <string name="analyzing_title">आपकी फसल की जांच हो रही है…</string>
+    <string name="stage_examining">✓ पत्ती के लक्षणों का विश्लेषण</string>
+    <string name="stage_identifying">✓ बीमारी के संकेतों की पहचान</string>
+    <string name="stage_assessing">✓ गंभीरता का आकलन</string>
+    <string name="stage_preparing">✓ व्यावहारिक सलाह तैयार हो रही है</string>
+
+    <!-- Result -->
+    <string name="result_title">फसल जांच परिणाम</string>
+    <string name="status_disease_detected">संभावित बीमारी पाई गई</string>
+    <string name="status_healthy">फसल स्वस्थ प्रतीत होती है</string>
+    <string name="status_uncertain">अस्पष्ट लक्षण</string>
+    <string name="confidence_label">विश्वास स्तर</string>
+    <string name="severity_label">गंभीरता स्तर</string>
+    <string name="severity_low">कम</string>
+    <string name="severity_moderate">मध्यम</string>
+    <string name="severity_high">उच्च (गंभीर)</string>
+    <string name="severity_unknown">अज्ञात</string>
+    <string name="visual_evidence_header">हमें क्या दिखा</string>
+    <string name="immediate_actions_header">तुरंत क्या करें</string>
+    <string name="corrective_measures_header">चरणबद्ध उपचारात्मक उपाय</string>
+    <string name="chemical_guidance_header">कीटनाशक एवं सुरक्षा निर्देश</string>
+    <string name="prevention_header">बचाव के उपाय</string>
+    <string name="expert_help_header">विशेषज्ञ से सलाह कब लें</string>
+    <string name="advisory_disclaimer">ध्यान दें: सलाह दृश्य लक्षणों पर आधारित है। रासायनिक उपचार के लिए स्थानीय कृषि अधिकारी से सलाह लें।</string>
+    <string name="listen_button">🔊 सुनें</string>
+    <string name="stop_audio_button">⏹ आवाज बंद करें</string>
+    <string name="replay_audio_button">🔄 दोबारा सुनें</string>
+    <string name="scan_another_button">📷 दूसरी पत्ती स्कैन करें</string>
+
+    <!-- Farm Insights -->
+    <string name="farm_insights_title">खेत की स्थिति</string>
+    <string name="farm_location">स्थान: प्रयागराज, उत्तर प्रदेश</string>
+    <string name="weather_title">मौसम का अनुमान</string>
+    <string name="weather_detail">बारिश की संभावना: 72% | तापमान: 28°C | नमी: 78%</string>
+    <string name="soil_title">मिट्टी की सेहत</string>
+    <string name="soil_detail">नमी: मध्यम (42%) | पीएच: 6.8 | एनपीके: उपयुक्त</string>
+    <string name="satellite_title">सैटेलाइट हेल्थ सूचकांक</string>
+    <string name="satellite_detail">वनस्पति स्वास्थ्य (NDVI): 0.76 (उत्तम)</string>
+    <string name="integrated_advisory_title">समेकित खेत सलाह</string>
+    <string name="integrated_advisory_body">बारिश की अधिक संभावना (72%) और पर्याप्त मिट्टी की नमी को देखते हुए 2 दिनों तक सिंचाई रोकें। नमी के कारण पत्तियों पर फफूंद के धब्बों पर ध्यान दें।</string>
+    <string name="demo_data_badge">डेमो डेटा</string>
+    <string name="live_ai_badge">लाइव मिथुन एआई (Gemini)</string>
+
+    <!-- Scans & History -->
+    <string name="scans_title">स्कैन इतिहास</string>
+    <string name="scans_subtitle">इस डिवाइस पर सहेजी गई पुरानी जांच रिपोर्ट</string>
+    <string name="no_scans_title">कोई पुराना स्कैन नहीं</string>
+    <string name="no_scans_subtitle">तुरंत एआई बीमारी जांच के लिए फसल की पत्ती पर कैमरा रखें।</string>
+
+    <!-- Impact & Vision -->
+    <string name="impact_title">प्रभाव एवं दूरदृष्टि</string>
+    <string name="impact_subtitle">भारतीय कृषि के लिए डिजिटल पब्लिक गुड आर्किटेक्चर</string>
+    <string name="impact_point1_title">🌾 शुरुआती बीमारी पहचान</string>
+    <string name="impact_point1_desc">फसल नुकसान से पहले ही बीमारी की समय पर पहचान।</string>
+    <string name="impact_point2_title">💧 संसाधनों का सही उपयोग</string>
+    <string name="impact_point2_desc">अनावश्यक कीटनाशक और पानी की बर्बादी से बचाव।</string>
+    <string name="impact_point3_title">🗣 बिना पढ़े-लिखे आसान उपयोग</string>
+    <string name="impact_point3_desc">हिन्दी और अंग्रेजी में बोलकर बताने वाली सरल आवाज तकनीक।</string>
+    <string name="impact_point4_title">📱 देशव्यापी विस्तार योग्य डिजाइन</string>
+    <string name="impact_point4_desc">राज्य, जिला और खेत स्तर पर स्केलेबल सिस्टम।</string>
+    <string name="impact_simulation_note">* किसानलेंस एआई के लिए डिजिटल पब्लिक Good आर्किटेक्चर।</string>
+
+    <!-- Bottom Nav / Titles -->
+    <string name="nav_home">होम</string>
+    <string name="nav_camera">स्कैनर</string>
+    <string name="nav_scans">स्कैन इतिहास</string>
+    <string name="nav_insights">खेत स्थिति</string>
+    <string name="nav_chat">AI से पूछें</string>
+    <string name="nav_impact">प्रभाव</string>
+
+    <!-- Errors -->
+    <string name="error_camera">फसल स्कैन करने के लिए कैमरा अनुमति जरूरी है।</string>
+    <string name="error_network">लाइव एआई जांच के लिए इंटरनेट चाहिए। ऑफलाइन होने पर डेमो मोड का उपयोग करें।</string>
+    <string name="error_bad_image">फसल की पत्ती स्पष्ट नहीं दिखी। कृपया दिन के उजाले में एक पत्ती की साफ फोटो लें।</string>
+    <string name="error_general">जांच में बाधा आई। कृपया दोबारा प्रयास करें या डेमो मोड चुनें।</string>
+
+    <!-- Chat / Ask Kisan AI -->
+    <string name="chat_title">किसान AI से पूछें</string>
+    <string name="chat_subtitle">खेती से जुड़ा कोई भी सवाल पूछें</string>
+    <string name="chat_input_hint">अपना सवाल लिखें…</string>
+    <string name="chat_send">भेजें</string>
+    <string name="chat_mic">बोलकर पूछें</string>
+    <string name="chat_listening">सुन रहे हैं… अब बोलिए</string>
+    <string name="chat_thinking">किसान AI सोच रहा है…</string>
+    <string name="chat_new_chat">नई बातचीत</string>
+    <string name="chat_dismiss">बंद करें</string>
+    <string name="chat_empty_title">आज आपकी खेती में क्या मदद करें?</string>
+    <string name="chat_empty_subtitle">फसल, कीट, मिट्टी, मौसम या खेती से जुड़ी किसी भी बात के बारे में पूछें।</string>
+    <string name="chat_seeded_banner">यह बातचीत आपके हाल के स्कैन के बारे में है</string>
+    <string name="chat_seeded_season_banner">यह बातचीत %1$s की फसलों के बारे में है</string>
+    <string name="chat_read_aloud">सुनें</string>
+    <string name="chat_stop_audio">रोकें</string>
+    <string name="chat_about_scan_short">इस स्कैन के बारे में AI से पूछें</string>
+    <string name="chat_suggestion_1">इस मौसम में कौन सी फसल बोएं?</string>
+    <string name="chat_suggestion_2">बिना रसायन के कीट कैसे रोकें?</string>
+    <string name="chat_suggestion_3">मेरी पत्तियां पीली क्यों हो रही हैं?</string>
+    <string name="chat_suggestion_4">खेत में सिंचाई कब करनी चाहिए?</string>
+</resources>
